@@ -79,13 +79,22 @@ width:100%;
 	margin: 5% 0;
 }
 
+.mem{
+    width: 70%;
+    margin: 0 15%;
+}
+
+.mem img{
+    width: 100%;
+}
+
 footer{
     width: 100%;
     text-align: center;
 	color:white;
 	font-weight:bold;
 	font-family: Arial;
-	position: absolute;
+	position: fixed;
 	bottom:5px;
     left: 0;
 }

@@ -1,0 +1,26 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title  %}Мемы про Артема{% endblock %}
+
+{% block style  %}
+<style>
+body{
+	background-image: url('{% static 'common/img/body.gif' %}');
+}
+</style>
+{% endblock %}
+
+{% block main  %}
+
+    <form method="post" class="form">
+        {% csrf_token %}
+        <input class="button" type="submit" value="Получить случайный мем">
+    <div class="text">
+        <div class="mem">
+            <img src="{{ random_item.img.url }}">
+        </div>
+    </div>
+    </form>
+
+{% endblock %}
