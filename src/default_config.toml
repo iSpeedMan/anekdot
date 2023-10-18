@@ -1,7 +1,7 @@
 [base]
 secret_key = 'django-insecure-@-m&9&rw!+d5@b)w^ui6g3x*nu&#@_l*0)2n(&w5bp+vg7vtpo'
 debug = true
-allowed_hosts = ['10.15.20.41', '127.0.0.1', '95.31.254.11']
+allowed_hosts = ['10.15.20.41', '127.0.0.1', '95.31.254.103']
 
 [storage]
 static_url = "/static/"
