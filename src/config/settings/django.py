@@ -87,7 +87,6 @@ INSTALLED_APPS = [
 
     # Apps
     'apps.common.apps.CommonConfig',
-    'apps.slaider.apps.SlaiderConfig',
 ]
 # _________________________________________________________
 

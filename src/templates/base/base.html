@@ -8,24 +8,28 @@
     <title>{% block title  %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'common/css/style.css' %}">
     <link rel="shortcut icon" href="{% static 'common/img/favicon.png' %}" type="image/jpg">
-    <meta name="keywords" content="анекдоты, артем, анекдоты про артема">
-    <meta name="description" content="Рандомный анекдот про Артема">
-    {% block style  %}{% endblock %}
+    <meta name="keywords" content="Рецепты">
+    <meta name="description" content="Рецепты вегатареанских блюд">
+    <style>
+        body{
+            background-image: url('{% static 'common/img/body.jpg' %}');
+            }
+</style>
 </head>
 <body>
+    <div class="wrapper_box">
     <div class="wrapper">
+        
         <header>
-            <img class="logo" src="{% static 'common/img/logo.gif' %}">
+            <img class="logo" src="{% static 'common/img/logo.png' %}">
         </header>
         <main>
-            <div class="random">
-                <img src="{% static 'common/img/random2.gif' %}">
-            </div>
             {% block main  %}{% endblock %}
         </main>
-        <footer>1997 год <br> Совпадения с реальными людьми или событиями случайны. </footer>
+        <footer>2023</footer>
 
         <script src="{% static 'common/js/scripts.js' %}" ></script>
+    </div>
     </div>
 </body>
 </html>
