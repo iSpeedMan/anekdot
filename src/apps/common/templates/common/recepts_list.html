@@ -8,9 +8,10 @@
     <form method="post" class="form">
         {% csrf_token %}
         <input class="button" type="submit" value="Получить случайный рецепт">
-        <div class="recept">
-            <div class="recept_img">
-                <img src="{{random_item.img.url}}" alt="{{ random_item.name }}" title="{{ random_item.name }}"></div>
+    </form>
+<div class="recept">
+            <div class="recept_img" style="background-image: url('{{random_item.img.url}}')" title="{{ random_item.name }}">
+            </div>
             <div class="recept_block">
                 <div class="recept_name">{{ random_item.name}}</div>
                 <div class="recept_text">
@@ -19,6 +20,5 @@
                     {% endautoescape %}</div>
             </div>
         </div>
-        {{product.specifications}}
-    </form>
 {% endblock %}
+
